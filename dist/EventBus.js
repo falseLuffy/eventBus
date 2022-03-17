@@ -107,7 +107,7 @@
 
         if (Array.isArray(event)) {
           event.forEach(function (name) {
-            that.off(name);
+            that.off(name, fn);
           });
           return that;
         }
