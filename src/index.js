@@ -1,23 +1,21 @@
 export default class EventBus {
-  events: Object;
-
-  constructor() {
-    this.events = {}
+  constructor () {
+    this.events = Object.create(null)
   }
 
-  on(event: string | Array<string>, fn: Function) {
-
-  }
-
-  emit(event: string) {
+  on (event, fn) {
 
   }
 
-  once(event: string, fn: Function) {
+  emit (event) {
 
   }
 
-  off(event?: string | Array<string>, fn?: Function) {
+  once (event, fn) {
+
+  }
+
+  off (event, fn) {
 
   }
 }

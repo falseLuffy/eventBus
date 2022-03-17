@@ -4,7 +4,9 @@
   "description": "eventBus",
   "main": "./dist/eventBus.min.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cross-env NODE_ENV=development rollup --config rollup.config.js",
+    "build": "cross-env NODE_ENV=production rollup --config rollup.config.js"
   },
   "repository": {
     "type": "git",
