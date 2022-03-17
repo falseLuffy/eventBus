@@ -5,11 +5,9 @@ import babel from '@rollup/plugin-babel'
 import replace from 'rollup-plugin-replace'
 import { uglify } from 'rollup-plugin-uglify'
 
-const packages = require('./package.json')
-
 const ENV = process.env.NODE_ENV
 
-const fileName = `isNetworkConfig.${ENV === 'production' ? 'min.js': 'js'}`
+const fileName = `EventBus.${ENV === 'production' ? 'min.js': 'js'}`
 
 const config = {
   input: './src/index.js',
