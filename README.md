@@ -2,11 +2,11 @@
 
 ## 安装  
 ```shell script
- npm install eventbus -S
+ npm install @falseluffy/eventbus -S
 ```
 ## 使用
 ```javascript
- import EventBus from 'eventbus'
+ import EventBus from '@falseluffy/eventbus'
 
  const Bus = new EventBus()
 
