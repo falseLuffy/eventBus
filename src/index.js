@@ -50,7 +50,7 @@ export default class EventBus {
 
     if (Array.isArray(event)) {
       event.forEach(name => {
-        that.off(name)
+        that.off(name, fn)
       })
       return that
     }
